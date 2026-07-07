@@ -1,0 +1,39 @@
+# Seminararbeit "KI im Schweizer Recht" — Python-Abhängigkeiten
+# Installation: pip install -r requirements.txt
+
+# Web Scraping (Korpus 1)
+requests
+beautifulsoup4
+lxml
+
+# PDF-Extraktion (Korpus 2)
+pdfplumber
+PyMuPDF
+
+# Datenverwaltung
+pandas
+openpyxl
+
+# Zero-Shot-Klassifikation (Korpus 1)
+transformers
+torch
+sentencepiece
+
+# Topic Modeling (Korpus 2)
+bertopic
+umap-learn
+hdbscan
+sentence-transformers
+
+# Hilfsanalysen / Statistik
+scikit-learn
+scipy
+
+# Visualisierung
+matplotlib
+seaborn
+
+# Notebooks
+jupyter
+jupyterlab
+ipykernel

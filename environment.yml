@@ -1,0 +1,29 @@
+name: seminararbeit-ki-recht
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - openpyxl
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - seaborn
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - pip:
+      - requests
+      - beautifulsoup4
+      - lxml
+      - pdfplumber
+      - PyMuPDF
+      - transformers
+      - torch
+      - sentencepiece
+      - bertopic
+      - umap-learn
+      - hdbscan
+      - sentence-transformers

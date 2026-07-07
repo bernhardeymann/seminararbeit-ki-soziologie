@@ -1,0 +1,93 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# === Jupyter ===
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# === Virtuelle Umgebungen ===
+venv/
+.venv/
+env/
+ENV/
+conda-meta/
+
+# === Caches (Tests, Linter, Typechecker) ===
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# === ML / NLP (Modelle, Checkpoints, Experiment-Tracking) ===
+*.pt
+*.bin
+*.safetensors
+.huggingface/
+wandb/
+mlruns/
+bertopic_model/
+models/
+
+# === Rohdaten (gross / urheberrechtlich sensibel — nicht versionieren) ===
+# gilt für roh UND bereinigt: beide enthalten volle Drittquellen-Texte
+# (Jusletter/Anwaltsrevue via Bibliothekszugang, Legal-Tech-Marketingtexte)
+daten/korpus1/*.csv
+daten/korpus2/*.csv
+daten/korpus2/pdf/
+literatur/*.pdf
+
+# === Exzerpte (enthalten wörtliche Zitate aus copyright-geschütztem Material) ===
+exzerpte/
+
+# === Private Projektdokumente (Entwürfe, Kontaktdaten, interne Planung) ===
+Eymann_Proposal*.docx
+Eymann_Proposal*.pdf
+Eymann_Proposal1.md
+PROJEKTDOSSIER.md
+Workflow_Arbeitspakete.md
+
+# === Outputs (regenerierbar aus Notebooks) ===
+outputs/*.png
+outputs/*.jpg
+outputs/*.html
+outputs/*.csv
+
+# === Geheimnisse / Zugangsdaten ===
+.env
+*.env.local
+secrets.yaml
+*_TOKEN*
+*_KEY*
+
+# === Office-Temporärdateien ===
+~$*.docx
+~$*.xlsx
+~$*.pptx
+.~lock.*#
+
+# === Obsidian ===
+.obsidian/
+
+# === LaTeX (falls später verwendet) ===
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+
+# === Betriebssystem ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Editor / IDE ===
+.vscode/
+.idea/
+*.swp
