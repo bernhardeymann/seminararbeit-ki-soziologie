@@ -75,6 +75,13 @@ Guidelines_*.pdf
 # === Outputs (regenerierbar über scripts/, enthält auch Arbeitstext-Exporte) ===
 outputs/
 
+# === Verworfene Methodentests (lokal behalten, nicht öffentlich) ===
+# dokumentieren die zugunsten manueller Kodierung verworfene automatisierte
+# Klassifikation (s. Kapitel 4/7); keine im Fliesstext zitierten Ergebnisse
+notebooks/Eymann_Methodentest_Korpus1.ipynb
+notebooks/Eymann_Korpus1_Validierung_Vergleich.ipynb
+notebooks/Eymann_Methodentest_Korpus2.ipynb
+
 # === Geheimnisse / Zugangsdaten ===
 .env
 *.env.local

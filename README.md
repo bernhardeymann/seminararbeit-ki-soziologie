@@ -69,7 +69,14 @@ Ordner kurz pausieren, Befehl wiederholen, danach wieder aktivieren.
   Fliesstext der Seminararbeit selbst, inkl. kompilierter Exporte in `outputs/`
 - venv/conda-Umgebungen, Caches, Zugangsdaten
 
-Im Repo landen: `notebooks/`, `scripts/`, `references.bib`,
+- `Eymann_Methodentest_Korpus1.ipynb`, `Eymann_Korpus1_Validierung_Vergleich.ipynb`,
+  `Eymann_Methodentest_Korpus2.ipynb` — dokumentieren die zugunsten manueller
+  Kodierung verworfene automatisierte Klassifikation (s. Kapitel 4/7); bleiben
+  lokal im Projektordner, ohne im Fliesstext zitierte Ergebnisse nicht Teil
+  des Repos
+
+Im Repo landen: die beiden Korpus-1-Pipeline-Notebooks (`Eymann_Erhebung_Korpus1.ipynb`,
+`Eymann_Bereinigung_Korpus1.ipynb`), `scripts/`, `references.bib`,
 `requirements.txt`, `environment.yml`, `README.md`, `.gitignore`, sowie als
 bewusste Ausnahme aus `daten/` die beiden finalen Kodiertabellen
 (`Eymann_Kodiertabelle_Korpus1_ENTWURF.csv`,
