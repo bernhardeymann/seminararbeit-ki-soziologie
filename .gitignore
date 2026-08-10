@@ -46,7 +46,7 @@ daten/*
 !daten/korpus1/
 !daten/korpus2/
 daten/korpus1/*
-!daten/korpus1/Eymann_Kodiertabelle_Korpus1_ENTWURF.csv
+!daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv
 daten/korpus2/*
 !daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
 literatur/*.pdf

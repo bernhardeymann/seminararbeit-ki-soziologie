@@ -79,7 +79,7 @@ Im Repo landen: die beiden Korpus-1-Pipeline-Notebooks (`Eymann_Erhebung_Korpus1
 `Eymann_Bereinigung_Korpus1.ipynb`), `scripts/`, `references.bib`,
 `requirements.txt`, `environment.yml`, `README.md`, `.gitignore`, sowie als
 bewusste Ausnahme aus `daten/` die beiden finalen Kodiertabellen
-(`Eymann_Kodiertabelle_Korpus1_ENTWURF.csv`,
+(`Eymann_Kodiertabelle_Korpus1.csv`,
 `Eymann_Kodiertabelle_Korpus2_ENTWURF.csv`) — sie enthalten kurze, einzelne
 Zitatstellen mit Quellenangabe (keine ganzen Texte) und bilden die
 Nachvollziehbarkeitsgrundlage für Tabelle 1/2 in Kapitel 5. Alles zusammen

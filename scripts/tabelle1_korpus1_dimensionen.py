@@ -2,7 +2,7 @@
 Erzeugt Tabelle 1: Verteilung der kodierten Stellen in Korpus 1 auf Beers
 sechs Data-Imaginary-Dimensionen. Neutral-Zeilen werden ausgeschlossen.
 
-Quelle: daten/korpus1/Eymann_Kodiertabelle_Korpus1_ENTWURF.csv
+Quelle: daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv
 Ausgabe: Markdown-Tabelle auf stdout, PNG unter
          outputs/Eymann_Tabelle1_korpus1_dimensionen.png
 """
@@ -16,7 +16,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parent.parent
-CSV_PATH = ROOT / "daten" / "korpus1" / "Eymann_Kodiertabelle_Korpus1_ENTWURF.csv"
+CSV_PATH = ROOT / "daten" / "korpus1" / "Eymann_Kodiertabelle_Korpus1.csv"
 PNG_PATH = ROOT / "outputs" / "Eymann_Tabelle1_korpus1_dimensionen.png"
 
 # Reihenfolge und Anzeigenamen der sechs Beer-Dimensionen
@@ -45,7 +45,7 @@ def main():
     with open(CSV_PATH, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    counts = Counter(row["modus_vorschlag"].strip() for row in rows)
+    counts = Counter(row["dimension"].strip() for row in rows)
     neutral = counts.pop("neutral", 0)
     total = sum(counts[d] for d in DIMENSIONEN)
 
