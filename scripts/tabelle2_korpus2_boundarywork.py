@@ -49,7 +49,7 @@ def main():
     with open(CSV_PATH, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
-    counts = Counter(row["modus_vorschlag"].strip() for row in rows)
+    counts = Counter(row["modus"].strip() for row in rows)
     ausgeschlossen_n = sum(counts.get(k, 0) for k in AUSGESCHLOSSEN)
     total = sum(counts.get(m, 0) for m in MODI)
 

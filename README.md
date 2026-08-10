@@ -67,19 +67,17 @@ Ordner kurz pausieren, Befehl wiederholen, danach wieder aktivieren.
   Entwürfe, Kontaktdaten, interne Planung
 - `Eymann_Kapitel_*`, `Eymann_Anhang_*`, `Eymann_Gliederung*` u.a. — der
   Fliesstext der Seminararbeit selbst, inkl. kompilierter Exporte in `outputs/`
-- venv/conda-Umgebungen, Caches, Zugangsdaten
-
+- `references.bib` — Literaturverzeichnis, nicht Teil des Code-Repos
 - `Eymann_Methodentest_Korpus1.ipynb`, `Eymann_Korpus1_Validierung_Vergleich.ipynb`,
   `Eymann_Methodentest_Korpus2.ipynb` — dokumentieren die zugunsten manueller
   Kodierung verworfene automatisierte Klassifikation (s. Kapitel 4/7); bleiben
-  lokal im Projektordner, ohne im Fliesstext zitierte Ergebnisse nicht Teil
-  des Repos
+  lokal im Projektordner, keine im Fliesstext zitierten Ergebnisse
+- venv/conda-Umgebungen, Caches, Zugangsdaten
 
 Im Repo landen: die beiden Korpus-1-Pipeline-Notebooks (`Eymann_Erhebung_Korpus1.ipynb`,
-`Eymann_Bereinigung_Korpus1.ipynb`), `scripts/`, `references.bib`,
-`requirements.txt`, `environment.yml`, `README.md`, `.gitignore`, sowie als
-bewusste Ausnahme aus `daten/` die beiden finalen Kodiertabellen
-(`Eymann_Kodiertabelle_Korpus1.csv`,
+`Eymann_Bereinigung_Korpus1.ipynb`), `scripts/`, `requirements.txt`,
+`environment.yml`, `README.md`, `.gitignore`, sowie als bewusste Ausnahme aus
+`daten/` die beiden finalen Kodiertabellen (`Eymann_Kodiertabelle_Korpus1.csv`,
 `Eymann_Kodiertabelle_Korpus2_ENTWURF.csv`) — sie enthalten kurze, einzelne
 Zitatstellen mit Quellenangabe (keine ganzen Texte) und bilden die
 Nachvollziehbarkeitsgrundlage für Tabelle 1/2 in Kapitel 5. Alles zusammen
