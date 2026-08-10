@@ -38,8 +38,17 @@ models/
 # urheberrechtlich geschützte Drittquellen-Texte (Jusletter/Anwaltsrevue via
 # Bibliothekszugang, Legal-Tech-Marketingtexte); die .md-Dateien darin sind
 # interne Arbeitsnotizen (Anbieterliste, Workflow, Erhebungslog, Codierregeln
-# in Arbeitsfassung) und bewusst nicht Teil des öffentlichen Repos
-daten/
+# in Arbeitsfassung) und bewusst nicht Teil des öffentlichen Repos.
+# Bewusste Ausnahme: die finalen Kodiertabellen (kurze, einzelne Zitatstellen
+# mit Quellenangabe, keine ganzen Texte) sind öffentlich, als Nachvollzieh-
+# barkeitsgrundlage für Tabelle 1/2 in Kapitel 5.
+daten/*
+!daten/korpus1/
+!daten/korpus2/
+daten/korpus1/*
+!daten/korpus1/Eymann_Kodiertabelle_Korpus1_ENTWURF.csv
+daten/korpus2/*
+!daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
 literatur/*.pdf
 
 # === Exzerpte (enthalten wörtliche Zitate aus copyright-geschütztem Material) ===

@@ -56,10 +56,11 @@ während eines Commits aktiv eingreift (seltene "bad config"-Fehler), Sync für 
 Ordner kurz pausieren, Befehl wiederholen, danach wieder aktivieren.
 
 **Was NICHT im Repo landet** (siehe `.gitignore`):
-- `daten/` (gesamter Ordner) — Drittquellen-Volltexte (CSV/PDF/HTML), teils
-  urheberrechtlich geschützt (Jusletter/Anwaltsrevue via Bibliothekszugang,
-  gescraptes Legal-Tech-Marketingmaterial), sowie interne Arbeitsnotizen
-  (Anbieterliste, Workflow, Erhebungslog, Codierregeln in Arbeitsfassung)
+- `daten/` (mit einer Ausnahme, s.u.) — Drittquellen-Volltexte (CSV/PDF/HTML),
+  teils urheberrechtlich geschützt (Jusletter/Anwaltsrevue via
+  Bibliothekszugang, gescraptes Legal-Tech-Marketingmaterial), sowie interne
+  Arbeitsnotizen (Anbieterliste, Workflow, Erhebungslog, Codierregeln in
+  Arbeitsfassung)
 - `literatur/*.pdf` — Volltexte der Pflichtlektüre
 - `exzerpte/` — enthält wörtliche Zitate aus copyright-geschütztem Material
 - `Eymann_Proposal*`, `PROJEKTDOSSIER.md`, `Workflow_Arbeitspakete.md` — private
@@ -69,6 +70,11 @@ Ordner kurz pausieren, Befehl wiederholen, danach wieder aktivieren.
 - venv/conda-Umgebungen, Caches, Zugangsdaten
 
 Im Repo landen: `notebooks/`, `scripts/`, `references.bib`,
-`requirements.txt`, `environment.yml`, `README.md`, `.gitignore` — alles, was
-für Reproduzierbarkeit und Code-Nachvollziehbarkeit nötig ist, ohne
-geschützte Inhalte, private Notizen oder den Arbeitstext selbst offenzulegen.
+`requirements.txt`, `environment.yml`, `README.md`, `.gitignore`, sowie als
+bewusste Ausnahme aus `daten/` die beiden finalen Kodiertabellen
+(`Eymann_Kodiertabelle_Korpus1_ENTWURF.csv`,
+`Eymann_Kodiertabelle_Korpus2_ENTWURF.csv`) — sie enthalten kurze, einzelne
+Zitatstellen mit Quellenangabe (keine ganzen Texte) und bilden die
+Nachvollziehbarkeitsgrundlage für Tabelle 1/2 in Kapitel 5. Alles zusammen
+ist, was für Reproduzierbarkeit und Code-Nachvollziehbarkeit nötig ist, ohne
+geschützte Volltexte, private Notizen oder den Arbeitstext selbst offenzulegen.
