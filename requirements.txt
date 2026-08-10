@@ -5,6 +5,11 @@
 requests
 beautifulsoup4
 lxml
+trafilatura
+playwright  # Nach Installation zusätzlich: playwright install chromium
+
+# Spracherkennung (Korpus 1/2)
+langdetect
 
 # PDF-Extraktion (Korpus 2)
 pdfplumber
@@ -18,6 +23,7 @@ openpyxl
 transformers
 torch
 sentencepiece
+protobuf  # Nötig für den SentencePiece-Tokenizer mehrsprachiger Modelle (z.B. xlm-roberta)
 
 # Topic Modeling (Korpus 2)
 bertopic

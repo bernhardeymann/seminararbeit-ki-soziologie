@@ -33,12 +33,13 @@ mlruns/
 bertopic_model/
 models/
 
-# === Rohdaten (gross / urheberrechtlich sensibel — nicht versionieren) ===
-# gilt für roh UND bereinigt: beide enthalten volle Drittquellen-Texte
-# (Jusletter/Anwaltsrevue via Bibliothekszugang, Legal-Tech-Marketingtexte)
-daten/korpus1/*.csv
-daten/korpus2/*.csv
-daten/korpus2/pdf/
+# === Rohdaten & interne Arbeitsnotizen (nicht versionieren) ===
+# gilt für den gesamten Ordner: CSV/PDF/HTML enthalten volle, teils
+# urheberrechtlich geschützte Drittquellen-Texte (Jusletter/Anwaltsrevue via
+# Bibliothekszugang, Legal-Tech-Marketingtexte); die .md-Dateien darin sind
+# interne Arbeitsnotizen (Anbieterliste, Workflow, Erhebungslog, Codierregeln
+# in Arbeitsfassung) und bewusst nicht Teil des öffentlichen Repos
+daten/
 literatur/*.pdf
 
 # === Exzerpte (enthalten wörtliche Zitate aus copyright-geschütztem Material) ===
@@ -51,11 +52,19 @@ Eymann_Proposal1.md
 PROJEKTDOSSIER.md
 Workflow_Arbeitspakete.md
 
-# === Outputs (regenerierbar aus Notebooks) ===
-outputs/*.png
-outputs/*.jpg
-outputs/*.html
-outputs/*.csv
+# === Arbeitstext der Seminararbeit selbst (nicht Teil des Code-Repos) ===
+Eymann_Kapitel_*.md
+Eymann_Kapitel_*.docx
+Eymann_Anhang_*.md
+Eymann_Gliederung*.md
+Eymann_Notizen_*.md
+Eymann_Email_*.md
+Eymann_Referenzvorlage.docx
+E-Mailverlauf_Saner.pdf
+Guidelines_*.pdf
+
+# === Outputs (regenerierbar über scripts/, enthält auch Arbeitstext-Exporte) ===
+outputs/
 
 # === Geheimnisse / Zugangsdaten ===
 .env
