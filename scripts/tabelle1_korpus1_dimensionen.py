@@ -1,16 +1,10 @@
 """
-Erzeugt Tabelle 1 (Kapitel 5.2.1): Verteilung der dimensionskodierten
-Stellen in Korpus 1 auf Beers sechs Data-Imaginary-Dimensionen.
+Erzeugt Tabelle 1: Verteilung der kodierten Stellen in Korpus 1 auf Beers
+sechs Data-Imaginary-Dimensionen. Neutral-Zeilen werden ausgeschlossen.
 
 Quelle: daten/korpus1/Eymann_Kodiertabelle_Korpus1_ENTWURF.csv
-Ausgabe: Markdown-Tabelle auf stdout (zur Verifikation) sowie eine
-PNG-Grafik unter outputs/Eymann_Tabelle1_korpus1_dimensionen.png, die im
-Dokument statt der Markdown-Tabelle eingebunden wird (Pandoc/Word stellt
-Markdown-Pipe-Tabellen mit der Referenzvorlage nicht zuverlaessig als
-saubere Tabelle dar, s. Notiz vom 09.08.2026).
-
-Neutral-Zeilen (kein Dimensionsbezug, s. Kapitel 4) werden aus der
-Auszaehlung ausgeschlossen.
+Ausgabe: Markdown-Tabelle auf stdout, PNG unter
+         outputs/Eymann_Tabelle1_korpus1_dimensionen.png
 """
 
 import csv

@@ -1,19 +1,11 @@
 """
-Erzeugt die drei in Kapitel 5.1 verbleibenden Abbildungen (Korpus-Ueberblick)
-ohne eingebetteten Diagrammtitel: Die Abbildungsbezeichnung samt Beschriftung
-steht bereits als Bildunterschrift im Dokument, ein zusaetzlicher Titel im
-Bild selbst waere redundant. Achsentitel bleiben erhalten, da sie fuer sich
-genommen zur Lesbarkeit des Diagramms noetig sind. Jeder Balken zeigt seinen
-Wert zusaetzlich als Zahl an (bar_label).
+Erzeugt drei Abbildungen zum Korpus-Ueberblick als PNG (ohne Diagrammtitel,
+da die Beschriftung als Bildunterschrift im Dokument steht).
 
 Abbildung 1: Satz-Segmente pro Anbieter, Korpus 1
   Quelle: daten/korpus1/Eymann_Korpus1_clean.csv
-Abbildung 2 (vormals 4): Texte pro Quelle, Korpus 2
-Abbildung 3 (vormals 5): Texte pro Erscheinungsjahr, Korpus 2
-  Quelle (Abb. 2/3): Werte wie in Kapitel 3.2/5.1 verifiziert und dokumentiert
-  (Anwaltsrevue 11, NZZ 2, je 1 aus AJP/HAVE/ZBJV/ZZZ/SJ/Revue de l'avocat/
-  inside-it.ch/NZZ am Sonntag/plaedoyer/unternehmensjurist; Jahre 2021:1,
-  2023:4, 2024:9, 2025:4, 2026:5).
+Abbildung 2/3: Texte pro Quelle bzw. Erscheinungsjahr, Korpus 2
+  Werte fest hinterlegt (Korpus-2-Metadaten)
 
 Ausgabe: outputs/Eymann_Korpus1_segmente_pro_anbieter.png,
          outputs/Eymann_Korpus2_texte_pro_quelle.png,

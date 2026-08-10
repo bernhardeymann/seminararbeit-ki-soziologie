@@ -1,18 +1,14 @@
 """
-Erzeugt Tabelle 2 (Kapitel 5.3.1): Verteilung der moduskodierten
-Stellen in Korpus 2 auf Faulconbridges vier Boundary-Work-Modi.
+Erzeugt Tabelle 2: Verteilung der kodierten Stellen in Korpus 2 auf
+Faulconbridges vier Boundary-Work-Modi.
+
+Ausgeschlossen: neutral, Reflexiv/kritisch (induktiv ergaenzte
+Zusatzkategorie), Methodenfrage und Korrektur (Dokumentationsnotizen,
+keine kodierten Textstellen).
 
 Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
-Ausgabe: Markdown-Tabelle auf stdout (zur Verifikation) sowie eine
-PNG-Grafik unter outputs/Eymann_Tabelle2_korpus2_boundarywork.png, die im
-Dokument statt der Markdown-Tabelle eingebunden wird (Pandoc/Word stellt
-Markdown-Pipe-Tabellen mit der Referenzvorlage nicht zuverlaessig als
-saubere Tabelle dar, s. Notiz vom 09.08.2026).
-
-Ausgeschlossen werden: neutral (kein Modusbezug), Reflexiv/kritisch
-(eigene, induktiv ergaenzte Kategorie, s. 6.4), Methodenfrage und
-Korrektur (Dokumentationsnotizen, keine eigentlichen kodierten Textstellen,
-s. 5.3.1).
+Ausgabe: Markdown-Tabelle auf stdout, PNG unter
+         outputs/Eymann_Tabelle2_korpus2_boundarywork.png
 """
 
 import csv
