@@ -2,84 +2,33 @@
 
 Bernhard Eymann · LUMACSS, Universität Luzern · Abgabe: 31. August 2026
 
-Dieses Repository dokumentiert Code und Daten-Pipeline der Seminararbeit
-(Web Scraping, Datenaufbereitung, Kodierung, Abbildungen/Tabellen). Der
-Fliesstext der Arbeit selbst ist nicht Teil dieses Repos (s. "Versionierung"
-unten).
+Dieses Repository enthält die Code- und Datengrundlage für die Resultate in
+Kapitel 5 der Seminararbeit. Der Fliesstext selbst ist nicht Teil des Repos.
 
-## Ordnerstruktur
+## Inhalt
 
-```
-daten/korpus1/      Rohtexte & bereinigtes Korpus Legal-Tech (Web Scraping)
-daten/korpus2/      PDFs & bereinigtes Korpus Rechtsdiskurs (Jusletter, Anwaltsrevue, SAV)
-notebooks/          Jupyter-Notebooks, ein Notebook pro Arbeitsschritt
-scripts/            Python-Skripte für Abbildungen und Tabellen (Kapitel 5)
-outputs/            Grafiken, Tabellen, Analyseergebnisse
-exzerpte/           Obsidian-Exzerpte der Theorie-/Seminarliteratur
-literatur/          PDFs der Pflicht- und Zusatzlektüre
-references.bib      Literaturverzeichnis (BibTeX)
-```
+- `daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv`,
+  `daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv` — die kodierten
+  Segmente (Zitat, Kategorie, Begründung), Basis für Tabelle 1/2 und die
+  Hypothesenprüfung (Kapitel 5.2/5.3).
+- `scripts/tabelle1_korpus1_dimensionen.py`,
+  `scripts/tabelle2_korpus2_boundarywork.py` — erzeugen Tabelle 1 und
+  Tabelle 2 aus den Kodiertabellen.
+- `scripts/gen_abbildungen_kapitel5.py` — erzeugt Abbildung 1–3
+  (Korpus-Überblick, Kapitel 5.1).
+- `notebooks/Eymann_Erhebung_Korpus1.ipynb`,
+  `notebooks/Eymann_Bereinigung_Korpus1.ipynb` — Erhebung und Aufbereitung
+  von Korpus 1 (Kapitel 3/4).
 
-Nicht alles hier liegt auch im öffentlichen GitHub-Repo — siehe Abschnitt
-"Versionierung" unten und `.gitignore`.
+Die Kandidatenidentifikation und Kodierung selbst erfolgte manuell (s.
+Kapitel 4) und ist nicht als Code hinterlegt — die Kodiertabellen sind das
+Ergebnis dieses Schritts.
 
-## Namenskonvention
+## Ausführen
 
-- Notebooks: `Eymann_[Schritt].ipynb` (z.B. `Eymann_Erhebung_Korpus1.ipynb`)
-- Datendateien: `Eymann_[Datei].csv`
-- Code-Kommentare: Deutsch
-
-## Python-Umgebung einrichten
-
-**Mit conda:**
 ```bash
-conda env create -f environment.yml
-conda activate seminararbeit-ki-recht
-```
-
-**Mit venv:**
-```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
+python scripts/tabelle1_korpus1_dimensionen.py
+python scripts/tabelle2_korpus2_boundarywork.py
+python scripts/gen_abbildungen_kapitel5.py
 ```
-
-## Versionierung (GitHub)
-
-Repo: https://github.com/bernhardeymann/seminararbeit-ki-soziologie (öffentlich)
-
-Das Git-Repository liegt direkt in diesem (kDrive-synchronisierten) Projektordner.
-`git init`/`commit`/`push` funktionieren hier über ein lokales Terminal einwandfrei
-— nur ein direkter `git init`-Versuch aus der Cowork-Sandbox heraus schlug wegen
-deren Dateizugriffsregeln fehl (korrupte `.git/config`). Falls kDrive-Sync
-während eines Commits aktiv eingreift (seltene "bad config"-Fehler), Sync für den
-Ordner kurz pausieren, Befehl wiederholen, danach wieder aktivieren.
-
-**Was NICHT im Repo landet** (siehe `.gitignore`):
-- `daten/` (mit einer Ausnahme, s.u.) — Drittquellen-Volltexte (CSV/PDF/HTML),
-  teils urheberrechtlich geschützt (Jusletter/Anwaltsrevue via
-  Bibliothekszugang, gescraptes Legal-Tech-Marketingmaterial), sowie interne
-  Arbeitsnotizen (Anbieterliste, Workflow, Erhebungslog, Codierregeln in
-  Arbeitsfassung)
-- `literatur/*.pdf` — Volltexte der Pflichtlektüre
-- `exzerpte/` — enthält wörtliche Zitate aus copyright-geschütztem Material
-- `Eymann_Proposal*`, `PROJEKTDOSSIER.md`, `Workflow_Arbeitspakete.md` — private
-  Entwürfe, Kontaktdaten, interne Planung
-- `Eymann_Kapitel_*`, `Eymann_Anhang_*`, `Eymann_Gliederung*` u.a. — der
-  Fliesstext der Seminararbeit selbst, inkl. kompilierter Exporte in `outputs/`
-- `references.bib` — Literaturverzeichnis, nicht Teil des Code-Repos
-- `Eymann_Methodentest_Korpus1.ipynb`, `Eymann_Korpus1_Validierung_Vergleich.ipynb`,
-  `Eymann_Methodentest_Korpus2.ipynb` — dokumentieren die zugunsten manueller
-  Kodierung verworfene automatisierte Klassifikation (s. Kapitel 4/7); bleiben
-  lokal im Projektordner, keine im Fliesstext zitierten Ergebnisse
-- venv/conda-Umgebungen, Caches, Zugangsdaten
-
-Im Repo landen: die beiden Korpus-1-Pipeline-Notebooks (`Eymann_Erhebung_Korpus1.ipynb`,
-`Eymann_Bereinigung_Korpus1.ipynb`), `scripts/`, `requirements.txt`,
-`environment.yml`, `README.md`, `.gitignore`, sowie als bewusste Ausnahme aus
-`daten/` die beiden finalen Kodiertabellen (`Eymann_Kodiertabelle_Korpus1.csv`,
-`Eymann_Kodiertabelle_Korpus2_ENTWURF.csv`) — sie enthalten kurze, einzelne
-Zitatstellen mit Quellenangabe (keine ganzen Texte) und bilden die
-Nachvollziehbarkeitsgrundlage für Tabelle 1/2 in Kapitel 5. Alles zusammen
-ist, was für Reproduzierbarkeit und Code-Nachvollziehbarkeit nötig ist, ohne
-geschützte Volltexte, private Notizen oder den Arbeitstext selbst offenzulegen.
