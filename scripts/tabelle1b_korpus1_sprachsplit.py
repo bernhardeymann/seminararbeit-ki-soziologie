@@ -60,7 +60,7 @@ def main():
     ranked = sorted(DIMENSIONEN, key=lambda d: total.get(d, 0), reverse=True)
 
     print(f"Basis: {len(dims)} dimensionskodierte Stellen (deutsch n={n_de}, englisch n={n_en}, franzoesisch n={n_fr}).\n")
-    print("| Dimension | gesamt (n=59) | deutsch (n=%d) | englisch (n=%d) |" % (n_de, n_en))
+    print("| Dimension | gesamt (n=%d) | deutsch (n=%d) | englisch (n=%d) |" % (len(dims), n_de, n_en))
     print("|---|---|---|---|")
     table_rows = []
     for d in ranked:
