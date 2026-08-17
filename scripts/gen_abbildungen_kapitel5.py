@@ -8,9 +8,9 @@ Abbildung 1: Satz-Segmente pro Anbieter, Korpus 1, plus kodierte Stellen
   Quelle: daten/korpus1/Eymann_Korpus1_clean.csv,
           daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv
 Abbildung 2: Texte pro Quelle, Korpus 2, plus kodierte Stellen
-  Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
+  Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2.csv
 Abbildung 3: Texte pro Erscheinungsjahr, Korpus 2, plus kodierte Stellen
-  Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
+  Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2.csv
 
 Ausgabe: outputs/Eymann_Korpus1_segmente_pro_anbieter.png,
          outputs/Eymann_Korpus2_texte_pro_quelle.png,
@@ -70,7 +70,7 @@ def abbildung1_segmente_pro_anbieter():
 
 
 def abbildung2_texte_pro_quelle():
-    csv_path = ROOT / "daten" / "korpus2" / "Eymann_Kodiertabelle_Korpus2_ENTWURF.csv"
+    csv_path = ROOT / "daten" / "korpus2" / "Eymann_Kodiertabelle_Korpus2.csv"
     with open(csv_path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
@@ -109,7 +109,7 @@ def abbildung2_texte_pro_quelle():
 
 
 def abbildung3_texte_pro_jahr():
-    csv_path = ROOT / "daten" / "korpus2" / "Eymann_Kodiertabelle_Korpus2_ENTWURF.csv"
+    csv_path = ROOT / "daten" / "korpus2" / "Eymann_Kodiertabelle_Korpus2.csv"
     with open(csv_path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 

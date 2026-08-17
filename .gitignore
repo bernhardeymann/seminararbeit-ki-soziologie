@@ -48,7 +48,7 @@ daten/*
 daten/korpus1/*
 !daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv
 daten/korpus2/*
-!daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
+!daten/korpus2/Eymann_Kodiertabelle_Korpus2.csv
 literatur/*.pdf
 
 # === Exzerpte (enthalten wörtliche Zitate aus copyright-geschütztem Material) ===

@@ -6,7 +6,7 @@ Ausgeschlossen: neutral, Reflexiv/kritisch (induktiv ergaenzte
 Zusatzkategorie), Methodenfrage und Korrektur (Dokumentationsnotizen,
 keine kodierten Textstellen).
 
-Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2_ENTWURF.csv
+Quelle: daten/korpus2/Eymann_Kodiertabelle_Korpus2.csv
 Ausgabe: Markdown-Tabelle auf stdout, PNG unter
          outputs/Eymann_Tabelle2_korpus2_boundarywork.png
 """
@@ -20,7 +20,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parent.parent
-CSV_PATH = ROOT / "daten" / "korpus2" / "Eymann_Kodiertabelle_Korpus2_ENTWURF.csv"
+CSV_PATH = ROOT / "daten" / "korpus2" / "Eymann_Kodiertabelle_Korpus2.csv"
 PNG_PATH = ROOT / "outputs" / "Eymann_Tabelle2_korpus2_boundarywork.png"
 
 MODI = ["Defending", "Creating", "Coalescing", "Negotiating"]
