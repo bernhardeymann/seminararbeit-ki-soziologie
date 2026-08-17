@@ -45,6 +45,7 @@ models/
 daten/*
 !daten/korpus1/
 !daten/korpus2/
+!daten/CODEBOOK.md
 daten/korpus1/*
 !daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv
 daten/korpus2/*

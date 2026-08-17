@@ -10,7 +10,7 @@ Kapitel 5 der Seminararbeit. Der Fliesstext selbst ist nicht Teil des Repos.
 - `daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv`,
   `daten/korpus2/Eymann_Kodiertabelle_Korpus2.csv` — die kodierten
   Segmente (Zitat, Kategorie, Begründung), Basis für Tabelle 1/2 und die
-  Hypothesenprüfung (Kapitel 5.2/5.3).
+  Hypothesenprüfung (Kapitel 5.2/5.3). Spaltenbeschreibung: `daten/CODEBOOK.md`.
 - `scripts/tabelle1_korpus1_dimensionen.py`,
   `scripts/tabelle2_korpus2_boundarywork.py` — erzeugen Tabelle 1 und
   Tabelle 2 aus den Kodiertabellen.
