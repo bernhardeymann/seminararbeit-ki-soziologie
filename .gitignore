@@ -48,6 +48,7 @@ daten/*
 !daten/CODEBOOK.md
 daten/korpus1/*
 !daten/korpus1/Eymann_Kodiertabelle_Korpus1.csv
+!daten/korpus1/Eymann_Korpus1_erhebung_log.md
 daten/korpus2/*
 !daten/korpus2/Eymann_Kodiertabelle_Korpus2.csv
 literatur/*.pdf
