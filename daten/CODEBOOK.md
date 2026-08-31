@@ -40,15 +40,20 @@ Boundary-Work-Modi (H2), plus zwei vertiefende Klassifikationsdurchgänge
 | `zweitkategorie_grenzfall` | Kategorie, optional | Analog zu Korpus 1: befüllt bei plausibler zweiter Modus-Zuordnung, Format `Modus1/Modus2`. |
 | `begruendung` | Text | Kurze Begründung der Modus-Zuordnung. |
 | `nachvollziehbarkeit_rolle` | Kategorie, optional | Nur befüllt für Defending-Stellen, die sich auf menschliche Kontrolle/Verantwortung/Prüfung berufen (s. Kapitel 6.5). Werte: `kein_bezug` (kein Kontrollargument), `thematisiert` (explizit als Anforderung benannt), `praemisse` (als unbegründete Voraussetzung behandelt), `problematisiert` (die behauptete Kontrolle selbst wird infrage gestellt). |
-| `beer_dimension_ziel` | Kategorie, optional | Nur befüllt für die 31 Defending-Stellen (s. Kapitel 6.4.3). Gegen welche Beer-Dimension sich die Abwehr richtet: `schnell`, `panoramisch`, `prophetisch`, `enthüllend`, `smart`, oder `andere` (kein erkennbarer Dimensionsbezug, z. B. Empathie- oder Konkurrenzargumente). |
+| `beer_dimension_ziel` | Kategorie, optional | Nur befüllt für die 31 Defending-Stellen (s. Kapitel 6.4.3). Gegen welche Beer-Dimension sich die Abwehr richtet: `schnell`, `zugänglich`, `panoramisch`, `prophetisch`, `enthüllend` (im CSV als `enthuellend` gespeichert, s. Hinweis unten zu Umlaut-Schreibweisen), `smart`, oder `andere` (kein erkennbarer Dimensionsbezug, z. B. Empathie- oder Konkurrenzargumente). In den Daten kommen nur `andere`, `enthuellend`, `panoramisch` und `smart` tatsächlich vor; `schnell`, `zugänglich` und `prophetisch` sind unter den 31 Defending-Stellen mit 0 Fällen vertreten (s. Kapitel 6.4.3). |
 | `beer_dimension_ziel_begruendung` | Text, optional | Begründung der Zielscheiben-Zuordnung in der Spalte davor. |
 
 ## Hinweise
 
 - Alle Kodierung ist Einzelkodierung ohne unabhängige Zweitkodierung (s.
-  Kapitel 6.6.4).
+  Kapitel 6.6.2).
 - Leere Zellen (`NaN` beim Einlesen mit pandas) bedeuten "nicht zutreffend
   bzw. nicht erhoben", nicht "Wert unbekannt".
 - Rechtschreibung in `zitat`- und `begruendung`-Feldern kann von der
   Originalquelle abweichende Umlaut-Schreibweisen enthalten (ae/oe/ue statt
-  ä/ö/ü), Artefakt der ursprünglichen Erhebung.
+  ä/ö/ü), Artefakt der ursprünglichen Erhebung. Ausnahmsweise betrifft dies
+  auch einen Kategoriewert: `beer_dimension_ziel` enthält `enthuellend` statt
+  `enthüllend` (ASCII-Schreibweise aus der ursprünglichen Kodierung, inhaltlich
+  identisch mit der in Anhang A und im Fliesstext verwendeten Bezeichnung
+  „enthüllend"); für Auszählungen ohne Belang, aber beim Filtern nach exaktem
+  Stringwert zu beachten.
